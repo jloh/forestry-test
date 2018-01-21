@@ -1,5 +1,6 @@
 ---
 pages:
+- posts/another-random-post.md
 - posts/inside-foresty-post.md
 hide_body: false
 fields:
