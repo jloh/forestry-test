@@ -8,11 +8,6 @@ fields:
   label: Title
   config:
     required: true
-- type: datetime
-  label: Published Date
-  name: publishDate
-  config:
-    required: true
 - type: text
   name: slug
   label: Slug
@@ -24,7 +19,6 @@ fields:
   label: Draft
   name: draft
   default: true
-- type: textarea
 - type: text
   name: description
   label: Description
