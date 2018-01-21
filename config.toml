@@ -1,97 +1,70 @@
-baseURL = "http://www.example.com"
-title = "Minimo"
-# for smart copyright line, leave this blank and check [params.copyright]
-copyright = ""
-
-theme = "minimo"
-
-disqusShortname = ""
-googleAnalytics = ""
-
 Paginate = 5
-preserveTaxonomyNames = true
-
-enableRobotsTXT = true # generate robots.txt
-
-# Syntax Highlighting ( https://gohugo.io/content-management/syntax-highlighting/ )
-pygmentsCodefences = true
-
-# Missing translations will default to this content language
+baseURL = "http://www.example.com"
+copyright = ""
 defaultContentLanguage = "en"
-
-[params.info]
-description = "Minimalist theme for Hugo"
-title404 = "Nothing's here!"
-
+disqusShortname = ""
+enableRobotsTXT = true
+googleAnalytics = ""
+preserveTaxonomyNames = true
+pygmentsCodefences = true
+theme = "minimo"
+title = "Minimo"
+[blackfriday]
+hrefTargetBlank = true
+[languages.en]
+lang = "en"
+languageName = "English"
+weight = 1
+[[menu.main]]
+identifier = "repository"
+name = "Repo"
+url = "https://github.com/MunifTanjim/minimo"
+weight = -10
 [params.assets]
+customcss = ["css/custom.css"]
+customjs = ["js/custom.js"]
 favicon = "favicon.ico"
-customCSS = ["css/custom.css"]
-customJS = ["js/custom.js"]
-gopher = "" # used in 404 template ( Generator: https://gopherize.me )
-
+gopher = ""
 [params.copyright]
+holder = "James Loh"
 prefix = ""
-holder = "MunifTanjim"
-startYear = "2017"
+startyear = "2017"
 suffix = ""
-
-[params.settings]
-# date & time format: https://golang.org/pkg/time/
-dateFormat = "2006, Jan 02"
-listDateFormat = "2006, Jan 02"
-hideEntryNavigation = ["page"] # boolean / array of sections
-recentPostsLength = 4
-hideSocialMenu = false
-showReadingTime = true
-noTermCloudShuffle = false
-homepageSections = ["recent_posts"]
-
+[params.info]
+description = "James Loh's blog"
+title404 = "Nothing's here!"
 [params.opengraph.facebook]
-admins = [] # array of Facebook IDs
-appID = ""
-pageID = ""
-
+admins = []
+appid = ""
+pageid = ""
 [params.opengraph.twitter]
-page = "" # Twitter page username
-
+page = "itsjloh"
 [params.seo]
-# Title Separator: - – — · • * ⋆ | ~ « » < >
-titleSeparator = "•"
-
+titleseparator = "•"
+[params.settings]
+dateformat = "2006, Jan 02"
+hideentrynavigation = ["page"]
+hidesocialmenu = false
+homepagesections = ["recent_posts"]
+listdateformat = "2006, Jan 02"
+notermcloudshuffle = false
+recentpostslength = 4
+showreadingtime = true
 [params.social]
 codepen = "MunifTanjim"
 email = "contact@example.com"
 facebook = "MunifTanjim"
 github = "MunifTanjim"
+google_scholar = "qc6CJjYAAAAJ"
 instagram = "MunifTanjim"
 linkedin = "muniftanjim"
-twitter = "MunifTanjim"
 telegram = "MunifTanjim"
-google_scholar = "qc6CJjYAAAAJ"
-
+twitter = "MunifTanjim"
 [params.social.config]
-platforms = ["github","facebook","twitter","instagram","email","codepen","linkedin","telegram","google_scholar"]
-
+platforms = ["github", "facebook", "twitter", "instagram", "email", "codepen", "linkedin", "telegram", "google_scholar"]
+[permalinks]
+page = "/:slug/"
 [taxonomies]
 author = "authors"
 category = "categories"
 tag = "tags"
-
-[permalinks]
-page = "/:slug/"
-
-[[menu.main]]
-name = "Repo"
-weight = -10
-identifier = "repository"
-url = "https://github.com/MunifTanjim/minimo"
-
-[blackfriday]
-hrefTargetBlank = true
-
-[languages]
-# edit this block for your own language
-[languages.en]
-lang = "en"
-languageName = "English"
-weight = 1
