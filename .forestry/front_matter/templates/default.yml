@@ -18,3 +18,7 @@ fields:
   type: boolean
   hidden: false
   default: true
+- type: text
+  name: slug
+  label: Slug
+  description: Page slug
