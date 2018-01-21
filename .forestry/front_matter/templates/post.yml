@@ -1,0 +1,28 @@
+---
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Title
+  config:
+    required: true
+- type: datetime
+  label: Published Date
+  name: publishDate
+  config:
+    required: true
+- type: text
+  name: slug
+  label: Slug
+  description: Post URL
+- type: tag_list
+  label: Tags
+  name: tags
+- type: boolean
+  label: Draft
+  name: draft
+  default: true
+- type: textarea
+- type: text
+  name: description
+  label: Description
