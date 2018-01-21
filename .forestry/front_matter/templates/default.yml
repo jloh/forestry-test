@@ -8,11 +8,6 @@ fields:
   type: text
   hidden: false
   default: ''
-- name: date
-  label: Date
-  type: text
-  hidden: false
-  default: 
 - name: draft
   label: Draft
   type: boolean
@@ -22,3 +17,10 @@ fields:
   name: slug
   label: Slug
   description: Page slug
+- type: datetime
+  name: publishDate
+  label: Date
+  description: Publish date
+  config:
+    required: true
+  default: Invalid date
