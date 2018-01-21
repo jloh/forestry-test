@@ -64,6 +64,7 @@ twitter = "MunifTanjim"
 platforms = ["github", "facebook", "twitter", "instagram", "email", "codepen", "linkedin", "telegram", "google_scholar"]
 [permalinks]
 page = "/:slug/"
+posts = "/posts/:slug"
 [taxonomies]
 author = "authors"
 category = "categories"
