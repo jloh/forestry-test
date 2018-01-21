@@ -1,7 +1,7 @@
 ---
 pages:
-- posts/another-random-post.md
 - posts/inside-foresty-post.md
+- posts/another-random-post.md
 hide_body: false
 fields:
 - name: title
