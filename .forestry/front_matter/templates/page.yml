@@ -1,5 +1,7 @@
 ---
+label: page
 hide_body: false
+is_partial: false
 fields:
 - name: title
   label: Title
@@ -26,3 +28,5 @@ fields:
   type: text
   hidden: true
   default: main
+pages:
+- content/about.md

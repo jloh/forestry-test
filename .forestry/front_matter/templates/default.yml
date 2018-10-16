@@ -1,8 +1,7 @@
 ---
-pages:
-- posts/inside-foresty-post.md
-- posts/another-random-post.md
+label: default
 hide_body: false
+is_partial: false
 fields:
 - name: title
   label: Title
@@ -25,3 +24,6 @@ fields:
   config:
     required: true
   default: Invalid date
+pages:
+- content/posts/inside-foresty-post.md
+- content/posts/another-random-post.md
